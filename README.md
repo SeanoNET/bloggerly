@@ -22,7 +22,7 @@ These instructions will get your clone of Bloggerly up and running on your local
 
 `npm start`
 
-Navigate to localhost:3000 in your browser
+* Navigate to [localhost:3000](http://localhost:3000) in your browser
 
 You can use the Generate Posts tool in the admin dashboard to populate the app with mock posts.
 
