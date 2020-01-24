@@ -1,3 +1,3 @@
 module.exports = {
-    mongoURL: 'mongodb://localhost:27017/bloggerly'
+    mongoURL: 'mongodb://data:27017/bloggerly'
 };

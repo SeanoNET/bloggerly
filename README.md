@@ -12,17 +12,31 @@ These instructions will get your clone of Bloggerly up and running on your local
 
 ### Running the project locally
 
-* Restore npm packages
+Restore npm packages
 
-`cd <path to bloggerly clone>/src`
+- `cd <path to bloggerly clone>/src`
 
-`npm install`
+- `npm install`
 
-* Start Bloggerly
+Start Bloggerly
 
-`npm start`
+- `npm start`
 
-* Navigate to [localhost:3000](http://localhost:3000) in your browser
+Update the connection string to mongodb in `dev-data.js` to `mongodb://localhost:27017/bloggerly`
+
+Navigate to [localhost:5000](http://localhost:5000) in your browser. You can use the generate posts tool in the admin dashboard to populate the app with mock posts.
+
+### Running in Docker
+
+Download and install [docker](https://www.docker.com/get-started) and [docker-compose](https://docs.docker.com/compose/install/)
+
+Build the image and start container `docker-compose up --build`
+
+> The `src/views/` directory has been setup as a bind mount. You can edit the html views without rebuilding/restarting the container.
+
+Once finished you can run `docker-compose down` to remove the running containers and network. To include volumes in the removal run `docker-compose down -v`
+
+Navigate to [localhost:5000](http://localhost:5000) in your browser.
 
 You can use the Generate Posts tool in the admin dashboard to populate the app with mock posts.
 

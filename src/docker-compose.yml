@@ -1,0 +1,27 @@
+version: '2'
+
+
+services: 
+    web:
+        build: .
+        image: bloggerly:latest
+        ports:
+            - '5000:5000'
+        environment:
+            - PORT=5000
+        volumes: 
+            - ./views/:/usr/src/app/views
+            - webdata:/usr/src/app/public
+        depends_on:
+            - data
+    data:
+        image: mongo:3.4.23-xenial
+        ports:
+            - '27017:27017'
+        volumes: 
+            - dbdata:/data/db
+
+volumes:
+    dbdata:
+    webdata:
+
