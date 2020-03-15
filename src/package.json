@@ -22,7 +22,7 @@
     "faker": "^4.1.0",
     "method-override": "^2.3.10",
     "moment": "^2.24.0",
-    "mongoose": "^5.9.1",
+    "mongoose": "^5.9.2",
     "mongoose-url-slugs": "^1.0.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
