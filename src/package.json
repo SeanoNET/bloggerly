@@ -26,7 +26,7 @@
     "mongoose-url-slugs": "^1.0.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "snyk": "^1.305.1"
+    "snyk": "^1.311.0"
   },
   "snyk": true
 }
